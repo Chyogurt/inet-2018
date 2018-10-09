@@ -1,1 +1,657 @@
+<html>
+	<head>
+	    <style>
+	        /* Reset CSS */
+	        html, body, div, span, applet, object, iframe,
+	        h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+	        a, abbr, acronym, address, big, cite, code,
+	        del, dfn, em, img, ins, kbd, q, s, samp,
+	        b, u, i, center,
+	        dl, dt, dd, ol, ul, li,
+	        fieldset, form, label, legend,
+	        caption, table, tbody, tfoot, thead, tr, th, td,
+	        article, aside, canvas, details, embed,
+	        figure, figcaption, footer, header, hgroup,
+	        menu, nav, output, ruby, section, summary,
+	        time, mark, audio, video {
+	            margin: 0;
+	            padding: 0;
+	            border: 0;
+	            font-size: 100%;
+	            font: inherit;
+	            vertical-align: baseline;
+	        }
+        
+	        html, body {
+	            height: 100%;
+	        }
+        
+	        body {
+	            background: url(http://static.tumblr.com/ge74hdk/G3flw5yrs/wood_pattern.png);
+				font-family: Helvetica, arial, sans-serif;
+	        }
+        
+	        a {
+	            text-decoration: none;
+	            color: inherit;
+	        }
+		
+			.icon_image {
+				background: url(http://static.tumblr.com/ge74hdk/gDtlw9u9f/icons.png) no-repeat;
+			}
+		
+			.purple {
+				background: url(http://static.tumblr.com/ge74hdk/h4llw84gr/purple_pixel.png);
+			}
+        
+	        #topbar {
+	            background: url(http://static.tumblr.com/ge74hdk/FO9lw61pp/topbar.png) repeat-x;
+				height: 52px;
+	        }
+			#topbar_contents {
+				width: 882px;
+				margin: auto;
+				height: 30px;
+				padding: 9px 40px;
+				position: relative;
+			
+			}
+		
+			#topbar_contents ul {
+				list-style-type: none;
+			}
+        
+	        #topbar_contents li {
+	            float: left;
+				padding-top: 4px;
+				padding-right: 7px;
+	        }
+			#topbar_contents li a {
+				height: 22px;
+				border-radius: 12px;
+				line-height: 22px;
+				font-size: 13px;
+/*				font-weight: bold;*/
+			
+				color: #FFFFFF;
+				text-shadow: 0px 1px #000000;
+			
+				background-color: #474b7e;
+				box-shadow: 
+					inset 0px 1px #56588b,
+					0px 1px #202033,
+					0px -1px #3d3e6c;
+				
+				padding: 0px 11px;
+			
+				background: url(http://static.tumblr.com/ge74hdk/Muhlw6c9s/button_bg.png) repeat-x;
+/*				http://static.tumblr.com/ge74hdk/tj4lw6cao/button_bg_active.png*/
+				user-select: none;
+				-moz-user-select: none;
+				-webkit-user-select: none;
+				display: inline-block;
+				*display: inline;
+			}
+		
+			#topbar_contents li a:active {
+				background: url(http://static.tumblr.com/ge74hdk/tj4lw6cao/button_bg_active.png) repeat-x;
+			
+				box-shadow: 
+					inset 0px 1px #242339,
+					0px 1px #484761,
+					0px -1px #232338;
+			}
+		
+			
+		
+			#content {
+				width: 882px;
+				padding: 0px 40px;
+				margin: auto;
+				position: relative;
+			
+				font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, sans-serif;
+				text-shadow: 0px 1px #FFFFFF;
+			
+				color: #777777;
+				font-weight: 300;
+			}
+		
+			#content a {
+				color: #4b55b2;
+				font-weight: bold;
+			}
+		
+			#content em {
+				font-style: italic;
+			}
+		
+			#content ul {
+				margin: 10px 0px 10px 15px;
+			}
+		
+			#content ol {
+				margin: 10px 0px 10px 20px;
+			}
+		
+			#content blockquote {
+				border-left: 4px solid #adadad;
+			
+				padding: 2px 0 2px 8px;
+			
+				margin: 20px 0;
+			}
+			h1#blog_title {
+				margin: 24px 0;
+			}
+		
+			h1#blog_title a {
+				color: #000000;
+				font-size: 60px;
+				position: relative;
+				z-index: 1;
+				opacity: 0.73;
+				text-shadow: #fff 0px 1px;
+				font-family: 'Yesteryear', cursive;
+				padding: 0px 10px;
+			}
+		
+			#content #left {
+				width: 532px;
+			
+				position: absolute;
+				left: 40px;
+				top: 0px;
+			}
+		
+			#content #right {
+				width: 310px;
+			
+				position: absolute;
+				right: 40px;
+				top: 0px;
+			}
+		
+			#about {
+				margin-top: 84px;
+				position: relative;
+			}
+			
+			#about_upper {
+				background: url(http://static.tumblr.com/ge74hdk/z3Tmi8dyw/about_top.png) no-repeat;
+				height: 39px;
+				width: 286px;
+				padding-top: 60px;
+				padding-left: 28px;
+				font-family: 'Yesteryear', cursive;
+				font-size: 22px;
+			}
+		
+			#about_middle {
+				background: url(http://static.tumblr.com/ge74hdk/mtSlw9jvf/about_middle.png) repeat-y;
+				width: 314px;
+			}
+		
+			#about_lower {
+				background: url(http://static.tumblr.com/ge74hdk/537lw9jl6/about_bottom.png) no-repeat;
+				width: 314px;
+				height: 29px;
+			}
+		
+			#about_content {
+				padding: 10px 29px;
+				line-height: 1.4em;
+				font-size: 14px;
+			}
+		
+			#about #portrait {
+				float: right;
+				margin-top: -41px;
+			
+				width: 54px;
+				height: 54px;
+			
+				padding: 3px;
+				background-color: #FFFFFF;
+				border: 1px solid #d9d6c6;
+			}
+		
+			#tape {
+				background: url(http://static.tumblr.com/ge74hdk/5xmlw9ovm/tape.png) no-repeat;
+				width: 38px;
+				height: 32px;
+			
+				position: absolute;
+			
+				top: 58px;
+				right: 13px;
+			}
+		
+		
+		
+		
+			#left div.item {
+				position: relative;
+				margin-bottom: 10px;
+			}
+		
+			#left div.item .item_content img {
+			    max-width: 500px;
+				display: block;
+			}
+		
+			#left div.item .item_content iframe {
+				display: block;
+			}
+		
+			#left div.item .upper {
+				background: url(http://static.tumblr.com/ge74hdk/3Cklwbrez/post_upper.png) no-repeat;
+				height: 15px;
+			}
+		
+			#left div.item .middle {
+				background: url(http://static.tumblr.com/ge74hdk/7Xmlwbrdl/post_middle.png);
+				min-height: 0px;
+			}
+		
+			#left div.item .lower_no_info {
+				background: url(http://static.tumblr.com/ge74hdk/FNolwh5aa/post_bottom.png) no-repeat;
+				height: 21px;
+				width: 532px;
+				position: relative;
+				top: -2px;
+			}
+		
+			#left div.item .lower {
+				background: url(http://static.tumblr.com/ge74hdk/ibwlwbrcv/post_lower.png) no-repeat;
+				height: 70px;
+				position: relative;
+				top: -23px;
+			}
+		
+			#left div.item .lower a {
+				color: #777777;
+				font-weight: 300;
+			
+				position: relative;
+				padding-left: 26px;
+				margin-left: 13px;
+			}
+		
+			#left div.item .lower a .icon_image {
+				position: absolute;
+				top: -2px;
+				left: 0px;
+				width: 24px;
+				height: 24px;
+			}
+		
+			#left div.item .lower a.time_ago .icon_image {
+				background-position: -24px -24px;
+			}
+			#left div.item .lower a.note_count .icon_image {
+				background-position: -24px -48px;
+			}
+			#left div.item .lower a.dsq-comment-count {
+				background: url(http://static.tumblr.com/ge74hdk/gDtlw9u9f/icons.png) no-repeat;
+				background-position: -24px -74px;
+			}
+		
+			#left div.item .item_content {
+				position: relative;
+				top: -5px;
+			
+				padding: 0px 10px;
+			}
+		
+			#left div.item .item_content .post_title {
+				font-size: 20px;
+				margin-top: -6px;
+			}
+		
+			#left div.item .item_content a {
+			
+			}
+		
+			#left div.item .item_content p {
+				margin: 10px 0;
+			}
+		
+			#left div.item .item_content p:first-child {
+				margin-top: 0px;
+			}	
+			#left div.item .item_content p:last-child {
+				margin-bottom: 0px;
+			}
+		
+			#left div.item .item_content blockquote:first-child {
+				margin-top: 0px;
+			}	
+			#left div.item .item_content blockquote:last-child {
+				margin-bottom: 0px;
+			}
+		
+					
+			#left .item .content_border {
+				padding: 5px;
+				background-color: #FFFFFF;
+			
+				box-shadow: 0px 1px 2px #a8a293;
+				display: inline-block;
+				max-width: 500px;
+			}
+		
+			#left .item .lower .lower_content {
+				padding: 30px 30px 0px;
+				text-shadow: none;
+			}
+			#left .item .lower_content a {
+				float: right;
+			}
+		
+			#left .item .lower_content a.time_ago {
+				float: none;
+				margin: 0px;
+				position: relative;
+				top: 1px;
+			}
+		
+			
+			#left .item.text .item_content {
+				padding: 16px 31px;
+			}
+		
+			#left div.item.text img {
+				max-width: 470px !important;
+			}
+		
+			#left .item .caption_border_outer {
+				border-top: 1px solid #dcd7d4;
+				border-bottom: 1px solid #FFFFFF;
+				margin-top: 10px;
+			}
+			#left .item .caption_border_inner {
+				border-top: 1px solid #FFFFFF;
+				border-bottom: 1px solid #dcd7d4;
+			
+				height: 3px;
+				width: 512px;
+			}
+		
+			#left .item .caption {
+				padding: 12px 12px 5px;
+			}
+		
+			#left .item.link .item_content {
+				padding: 16px 31px;
+			}
+		
+			#left .item.link a.link {
+				padding: 6px 10px;
+			
+				border-radius: 4px;
+			
+				display: inline-block;
+				*display: inline;
+			
+				/* IE
+				filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+				-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+				*/
+			}
+		
+		
+		
+			/* post icons */
+		
+			.item.text .post_tag .icon_image {
+				background-position: 0px 0px;
+			}
+			.item.photo .post_tag .icon_image {
+				background-position: 0px -24px;
+			}
+	
+			
+			#notes {}
+			
+			#notes_header {
+				background: url(http://static.tumblr.com/ge74hdk/Cjflwgqwi/notes_header.png) no-repeat;
+				height: 43px;
+				width: 530px;
+			}
+		
+			#notes ol.notes {
+				background-color: #faf5d3;
+				background-color: rgba(250, 245, 211, 0.7);
+			
+				padding: 4px 12px;
+				margin: 0px;
+				list-style: none;
+			
+				width: 504px;
+			
+				border-left: 1px solid #ad9d71;
+				border-right: 1px solid #ad9d71;
+				border-bottom: 1px solid #ad9d71;
+			
+				border-radius: 0px 0px 4px 4px;
+			
+				margin-bottom: 40px;
+			
+			}
+		
+			#notes ol.notes li {
+				border-bottom: 1px solid #e2d1b1;
+				border-top: 1px solid #f9f2e0;
+			
+				padding: 6px 0;
+			}
+		
+			#notes ol.notes li:first-child {
+				border-top: none;
+			}
+			#notes ol.notes li:last-child {
+				border-bottom: none;
+			}
+		
+			#notes ol.notes li img.avatar {
+				position: relative;
+				top: 3px;
+			
+				padding-right: 10px;
+			}
+		
+			#notes ol.notes blockquote {
+				margin: 15px 0 15px 30px;
+			}
+		
+		
+		
+			#sidebar {
+				position: relative;
+				left: 3px;
+				top: 25px;
+			}
+		
+			#mplift_widget_holder {
+				/* XXX */
+				display: block;
+				width: 308px;
+			
+				background-color: transparent;
+				border: none;
+			
+				padding-bottom: 53px;
+			}
+		
+			#mplift_header {
+				background: url(http://static.tumblr.com/ge74hdk/sD4lw9jmc/exchange_top.png) no-repeat;
+				width: 308px;
+				height: 57px;
+				text-indent: -7000px;
+				border: none;
+			
+				padding: 0px;
+			}
+		
+			#mplift_items {
+				background: url(http://static.tumblr.com/ge74hdk/Kxblw9q77/exchange_middle.png) repeat-y;
+			
+				width: 296px;
+				padding: 0px 6px;
+			}
+		
+			#mplift_items .mplift_item {
+				border-color: rgb(227, 224, 211);
+				border-bottom: 1px solid rgba(227, 224, 211, 0.8);
+				padding: 10px 11px;
+			}
+		
+			#mplift_items .mplift_item a {
+				color: #777777;
+				font-weight: 300;
+				font-size: 14px;
+			
+				text-shadow: 0px 1px #FFF;
+			}
+		
+			#mplift_items .mplift_item a:hover {
+				color: #4b55b2;
+				text-decoration: underline;
+			}
+		
+			#mplift_items .mplift_item:last-child {
+				border: none;
+			}
+		
+			#mplift_footer {
+				background: url(http://static.tumblr.com/ge74hdk/RBllw9jm1/exchange_bottom.png) no-repeat;
+				width: 308px;
+				height: 53px;
+				text-indent: -7000px;
+				border: none;
+			
+				position: relative;
+				margin-bottom: -15px;
+			}
+		
+			#mplift_footer a {
+				display: block;
+				height: 25px;
+				width: 160px;
+			
+				position: absolute;
+			
+				right: 37px;
+				top: 18px;
+			}
+		
+			
+		
+		
+			http://static.tumblr.com/ge74hdk/Cjflwgqwi/notes_header.png
+			http://static.tumblr.com/ge74hdk/Xqflwgqws/prev_hover.png
+		
+			http://static.tumblr.com/ge74hdk/VINlwgqym/timestamp_left.png
+			http://static.tumblr.com/ge74hdk/ZLllwgqyz/timestamp_right.png
+			*/
+		
+			#pagination {
+				padding-bottom: 40px;
+				position: relative;
+				top: -20px;
+			}
+			.pagination {
+				background-repeat: no-repeat;
+				width: 94px;
+				height: 37px;
+				float: left;
+			}
+			
+	    </style>
+	    <style type="text/css">{CustomCSS}</style>
+	</head>
 
+	<body  class="show">
+
+	<div id="topbar">
+	    <div id="topbar_contents">
+	    <ul>
+		    <li><a href="/">1 Лабораторная работа</a></li>
+    		   
+		    <li><a href="{URL}">2 Лабораторная работа</a></li>
+		       
+  		    <li><a href="/ask">3 Лабораторная работа</a></li>
+		    
+		    <li><a href="/submit">4</a></li>
+		  
+		   	<li style="clear: both;"></li>
+	    </ul>
+	    
+	    </div>
+	</div>
+
+	<div id="content">
+		<div id="right">
+			<div id="about">
+				<div id="about_upper">Яцунь И.В.</div>
+				<div id="about_middle">
+					<div id="about_content">
+						<div id="tape"></div>
+						<img src="https://static.grouple.co/uploads/pics/avatar/a9/86c5a1bddb68e56e3a0a5dabeb5a9a.jpg" id="portrait" />
+						Группа ИДМ-18-05
+					</div>
+				</div>
+				<div id="about_lower"></div>
+			</div>
+		</div>
+
+		<div id="left">
+		    <h1 id="blog_title"><a href="">Лабораторная работа 1</a></h1>
+    
+		    <div id="blog_posts">
+		    
+    
+		       	<div class="item">
+					
+					<div class="upper"></div>
+					<div class="middle">
+						<div class="item_content">
+		        			
+								<div class="post_title"><font style="color: #0000CD">Описание лабораторной работы</font></div>
+			                	
+								<div class="content_border"> 
+<h4>Задачи:</h4>
+ <ol>
+   <li>Зарегистрироваться на GitHub;</li>
+   <li>Подключиться к общему репозиторию Inet-2018;</li>
+   <li>Разработать личную страницу с отчетами к лабораторным работам;</li>
+   <li>Написать ответ к 1 вопросу 10 билета в виде wiki-статьи.</li>
+   <li>Формирование команды для дальнейшей работы над проектом;</li>
+ </ol>
+   <h4>Выполнение работы:</h4>
+    <ol>
+      <li>Создана <a href="https://github.com/chyogurt">личная страница пользователя</a> на GitHub;</li>
+      <li>Страница выгружена в <a href="https://github.com/stankin/inet-2018/tree/master/IDM-18-05/Yatsun">общий репозиторий</a>.</li>
+      <li>Разработана <a href="https://chyogurt.github.io/inet/index.html">страница с отчетами</a>;</li>
+      <li>Написана <a href="https://github.com/stankin/inet-2018/wiki/%D0%91%D0%B8%D0%BB%D0%B5%D1%82-10">wiki-статья</a> по 1 вопросу 10 билета "Понятия алгоритма, программы, данных. Связь с понятием информационных технологий."</li>
+      <li>Сформирована команда из 3 человек (<a href="https://github.com/chyogurt">Яцунь И.В. (ИДМ-18-05)</a>, <a href="https://github.com/keklgar">Матвеев А.С. (ИДМ-18-01)</a>, <a href="https://github.com/asay1515">Шуленина А.В. (ИДМ-18-04)</a>);</li>
+</ol>
+								
+								</div>
+									
+					            </a>
+											
+						</div>
+					</div>
+					
+		        </div>
+        
+		    
+			</div>
+	
+		</div>
+	</div>
+	
+	</body>
+	</html>
